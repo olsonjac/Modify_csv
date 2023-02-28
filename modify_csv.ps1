@@ -1,4 +1,4 @@
-#initial file location using a wild card to pull any csv file present
+#initial file location using a wild card to pull any csv file presents
 $inputfilepath="C:\Users\olson\OneDrive\Documents\Ingest\example.csv"
 #date varianble used to generate unique file names that reference time of creation
 $date = (Get-Date -Format "yyyy.MM.dd_hhmm_tt")
