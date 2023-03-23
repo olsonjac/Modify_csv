@@ -6,7 +6,7 @@ $date = (Get-Date -Format "yyyy.MM.dd_hhmm_tt")
 $destinationfilepath="C:\Users\olson\OneDrive\Documents\Ingest\archive\new_file$date.xlsx"
 #variable that will hold the csv file that is imported at the filepath location
 $names=Import-Csv -Path $inputfilepath
-echo "hi"
+
 #for loop that will iterate through the csv table and concatentate two of the columns into a single new column that will be added at the end
 foreach($name in $names){
     $newname="$($name.AssetName) $($name.Type)"
